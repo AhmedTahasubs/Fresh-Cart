@@ -180,23 +180,18 @@ export default function Checkout() {
           City
         </label>
       </div>
-      <div className='flex justify-between items-center'>
+      <div className='flex justify-between gap-2 items-center'>
       <button
       onClick={()=>{setPaymentMethod("cash")}}
         type="submit"
-        className="text-white bg-[--main-color]  font-medium rounded-lg text-sm px-5 py-2.5 text-center active:scale-95"
-      >
-      Pay On Delivery  <i className="fa-solid fa-truck"></i> 
+        className="text-white bg-[--main-color]  font-bold px-5 py-2.5  rounded-lg text-base  text-center active:scale-95"
+      >Pay On Delivery <i className="fa-solid fa-truck"></i> 
       </button>
       <button
       onClick={()=>{setPaymentMethod("online")}}
         type="submit"
-        className="text-white bg-[--main-color] h-[40px] font-medium rounded-lg text-sm overflow-hidden  text-center active:scale-95"
-      >
-        <div className='flex justify-center items-center gap-1 px-2 py-1'>
-        <span>Pay Online</span>
-         <img src="/visa.svg" className='w-1/4' alt="" />
-        </div>
+        className="text-white bg-[--main-color] font-bold px-5 py-2.5 rounded-lg text-base  text-center active:scale-95"
+      >Pay Online <i className="fa-brands fa-cc-visa"></i>
       </button>
       </div>
     </form>

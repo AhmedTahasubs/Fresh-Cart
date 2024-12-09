@@ -22,7 +22,7 @@ export default function CartItem({productInfo}) {
           navigate(`/details/${id}`)
         }
        }
-         className='text-2xl font-bold cursor-pointer'>{title}</h2>
+         className='text-2xl font-bold cursor-pointer line-clamp-3'>{title}</h2>
         <p className='text-[--main-color] font-semibold my-3'>Price : <span className='font-thin text-slate-600 dark:text-gray-300'>EGP {price}</span></p>
         <button onClick={()=>removeProductFromCart({id:id})} className='font-semibold active:scale-95'><i className="fa-solid fa-trash-can text-[--main-color]"></i> Remove</button>
        </div>

@@ -43,7 +43,7 @@ export default function Orders() {
         </div>
         {orders.map((order,index)=><div key={order.id} className="order my-5 p-1">
           <header className='mb-2'>
-            <div className=" flex flex-row justify-center gap-5 w-fit mx-auto dark:text-gray-300">
+            <div className=" flex flex-row justify-center sm:gap-5 w-fit mx-auto dark:text-gray-300">
               <div className="flex flex-col text-center gap-5">
                 <p className='text-lg font-bold'>
                   Order Number : <span className='font-light text-slate-500'>{index+1}</span>
@@ -66,7 +66,7 @@ export default function Orders() {
           </header>
           <div className='rounded-lg overflow-hidden border-[1px] w-full md:w-9/12 mx-auto table-auto border-b-[0px] border-[--main-color]'>
           <table className='w-full text-center font-bold table-fixed dark:text-gray-300 dark:bg-gray-800'>
-            <thead className='items-center  bg-[--main-color] text-white'>
+            <thead className='items-center  bg-[--main-color] text-white text-[10px] md:text-sm'>
                <tr>
                 <th></th>
                 <th>Product</th>
@@ -75,7 +75,7 @@ export default function Orders() {
                 <th>Subtotal</th>
                 </tr>     
             </thead>
-            <tbody>
+            <tbody className='text-[10px] md:text-lg'>
                 {order.cartItems.map((product)=>
                     <tr key={product._id} className='border-b border-[--main-color]'>
                     <td onClick={()=>{navigate(`/details/${product.product._id}`)}} className='cursor-pointer'><img className='w-16 md:ml-10' src={product.product.imageCover}  alt="" /></td>

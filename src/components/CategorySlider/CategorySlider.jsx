@@ -88,20 +88,10 @@ export default function CategorySlider() {
   // },[])
   return (
     <>
-        {/* last slider and it wasnt responsive */}
-        {/* {categories? <section className='pb-8'>
-        <h2 className='font-bold text-lg mb-3 before:h-5 before:w-1 before:bg-[--main-color] before:-left-2 before:top-1  before:absolute relative before:rounded-lg'>Shop Popular Categories</h2>
-        <swiper-container  loop={true} slides-Per-View={6}  autoplay={true} speed="500">
-        {categories.map((category)=><swiper-slide key={category._id}>
-            <Link to={`/category/${category._id}`}><img src={category.image} className='w-full h-72 object-cover' alt="" />
-            <h3>{category.name}</h3></Link>
-        </swiper-slide>)}
-        </swiper-container>
-        </section>: <Loading/>} */}
         {/* best slider and its easy to resposive from slick react */}
         <section className='pb-8'>
         <h2 className='font-bold text-lg mb-3 before:h-5 before:w-1 before:bg-[--main-color] before:-left-2 before:top-1 dark:text-gray-300  before:absolute relative before:rounded-lg'>Shop Popular Categories</h2>
-        <div className='slider-container dark:text-gray-300'>
+        <div className='slider-container dark:text-gray-300 px-4'>
         <Slider {...settings}>
         {data.data.data.map((category)=><div key={category._id}>
             <Link to={`/categoryProduct/${category._id}?name=${category.name}`}><img src={category.image} className='w-full h-72 object-cover' alt="" />

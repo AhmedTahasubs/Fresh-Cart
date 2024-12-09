@@ -13,7 +13,7 @@ export default function Footer() {
         <p className='my-3 text-lg text-gray-500 font-thin'>We Will Send You a Link, open it on your phone to download the app</p>
         <div className='flex gap-4 flex-col md:flex-row'>
         <input type="text" name="" placeholder='Email...' className='form-control border-[#0aad0a98] flex-grow  focus:ring-0 dark:bg-transparent' id="" />
-        <button className='btn-primary w-1/3 md:w-fit border border-[--main-color] active:scale-95'>Share App Link</button>
+        <button className='btn-primary w-1/3 md:w-fit border border-[--main-color] active:scale-95 font-bold rounded-lg'>Share App Link</button>
         </div>
         <hr className='my-8' />
       <div className='flex flex-col lg:flex-row gap-4 justify-between items-left mt-4 '>

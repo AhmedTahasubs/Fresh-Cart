@@ -25,6 +25,9 @@ import Checkout from './components/Checkout/Checkout'
 import Orders from './components/Orders/Orders'
 import Wishlist from './components/Wishlist/Wishlist'
 import WishlistProvider from './Context/Wishlist.context'
+import ForgotPassword from './components/ForgotPassword/ForgotPassword'
+import VerifyResetCode from './components/VerifyResetCode/VerifyResetCode'
+import ResetPassword from './components/ResetPassword/ResetPassword'
 
 
 function App() {
@@ -46,7 +49,10 @@ function App() {
     ]},
     {path:'/auth',element:<Layout/>,children:[
       {path:'register',element:<Register/>},
-      {path:'login',element:<Login/>}
+      {path:'login',element:<Login/>},
+      {path:'forgotPassword', element:<ForgotPassword/>},
+      {path:'verify',element:<VerifyResetCode/>},
+      {path:'reset',element:<ResetPassword/>},
     ]}
   ])
   return (

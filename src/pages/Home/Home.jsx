@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import ProductsCard from '../ProductsCard/ProductsCard'
+import ProductsCard from '../../components/ProductsCard/ProductsCard'
 import axios from 'axios';
-import Loading from '../Loading/Loading';
-import HomeSlider from '../HomeSlider/HomeSlider';
-import CategorySlider from '../CategorySlider/CategorySlider';
+import Loading from '../../components/Loading/Loading';
+import HomeSlider from '../../components/HomeSlider/HomeSlider';
+import CategorySlider from '../../components/CategorySlider/CategorySlider';
 import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet';
 export default function Home() {

@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react'
-import Loading from '../Loading/Loading'
+import Loading from '../../components/Loading/Loading'
 import { cartContext } from '../../Context/Cart.context'
 import empty from '/empty_cart.svg'
-import CartItem from '../CartItem/CartItem'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import CartItem from '../../components/CartItem/CartItem'
 export default function Cart() {
   let {getCartProducts,cartInfo,clearCart} =  useContext(cartContext)
    useEffect(()=>{

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { userContext } from '../../Context/User.Context';
 import { jwtDecode } from 'jwt-decode';
 import axios from 'axios';
-import Loading from '../Loading/Loading';
+import Loading from '../../components/Loading/Loading'
 import moment from 'moment';
 import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';

@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
-import Loading from '../Loading/Loading'
 import { Link, useNavigate } from 'react-router-dom'
 import { cartContext } from '../../Context/Cart.context'
 import { wishlistContext } from '../../Context/Wishlist.context'
 import { Helmet } from 'react-helmet'
+import Loading from '../../components/Loading/Loading'
 export default function Wishlist() {
     let {getWishlistProducts,wishlistInfo,removeProductFromWishlist} = useContext(wishlistContext)
     let {addProductToCart} = useContext(cartContext)

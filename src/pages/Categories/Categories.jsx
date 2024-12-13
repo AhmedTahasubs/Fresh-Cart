@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import Loading from '../Loading/Loading'
-import CategoryComp from '../CategoryComp/CategoryComp';
+import Loading from '../../components/Loading/Loading'
+import CategoryComp from '../../components/CategoryComp/CategoryComp';
 import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet';
 export default function Categories() {

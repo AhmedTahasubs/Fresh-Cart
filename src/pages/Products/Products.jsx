@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ProductsCard from '../ProductsCard/ProductsCard'
+import ProductsCard from '../../components/ProductsCard/ProductsCard'
 import axios from 'axios';
-import Loading from '../Loading/Loading';
+import Loading from '../../components/Loading/Loading';
 import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet';
 export default function Products() {
